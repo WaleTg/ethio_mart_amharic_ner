@@ -5,8 +5,18 @@ from telethon.tl.types import Message
 import os
 from datetime import datetime
 import base64
-api_id = 24293803       # Replace with your actual API ID (integer)
-api_hash = 'bc988445ad7f2cd72200d184e18e7f0d'      # Replace with your actual API hash (string)
+import os
+from dotenv import load_dotenv
+import os
+from dotenv import load_dotenv
+
+# Load the .env file from the myEnv folder
+dotenv_path = os.path.join(os.path.dirname(__file__), '..', 'myEnv', '.env')
+load_dotenv(dotenv_path)
+# getting hidden variables
+api_id = os.getenv('API_ID')
+api_hash = os.getenv('API_HASH')
+
 
 channels = [
     "ZemenExpress",
