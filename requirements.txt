@@ -1,0 +1,9 @@
+telethon
+pandas
+numpy
+transformers
+datasets
+scikit-learn
+seqeval
+matplotlib
+jupyter
